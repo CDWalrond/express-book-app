@@ -6,5 +6,8 @@ const books = require("../data/book-data").books;
 router.get("/", function (req, res, next) {
   res.render("index", { books });
 });
+router.get("/new", function (req, res, next) {
+  res.render("new");
+});
 
 module.exports = router;

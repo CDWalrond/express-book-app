@@ -1,0 +1,46 @@
+doctype html
+html
+  head
+    title Book Form
+  body
+    h1 Book Form
+
+    form(action="/submit-book" method="post")
+      div
+        label(for="isbn") ISBN:
+        input#isbn(type="text", name="isbn", required)
+
+      div
+        label(for="title") Title:
+        input#title(type="text", name="title", required)
+
+      div
+        label(for="subtitle") Subtitle:
+        input#subtitle(type="text", name="subtitle")
+
+      div
+        label(for="author") Author:
+        input#author(type="text", name="author", required)
+
+      div
+        label(for="published") Published Date:
+        input#published(type="date", name="published")
+
+      div
+        label(for="publisher") Publisher:
+        input#publisher(type="text", name="publisher")
+
+      div
+        label(for="pages") Pages:
+        input#pages(type="number", name="pages")
+
+      div
+        label(for="description") Description:
+        textarea#description(name="description")
+
+      div
+        label(for="website") Website:
+        input#website(type="url", name="website")
+
+      div
+        button(type="submit") Submit
